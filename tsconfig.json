@@ -1,26 +1,19 @@
 {
   "compilerOptions": {
-    "removeComments": true,
-    "forceConsistentCasingInFileNames": true,
-    "target": "esnext",
-    "module": "esnext",
     "strict": true,
-    "strictBindCallApply": true,
-    "importHelpers": true,
-    "moduleResolution": "node",
-    "isolatedModules": true,
-    "skipLibCheck": true,
+    "strictNullChecks": true,
+    "jsx": "preserve",
+    "jsxFactory": "h",
+    "jsxFragmentFactory": "Fragment",
+    "noImplicitAny": true,
+    "noUnusedLocals": false,
+    "module": "ES6",
+    "moduleResolution": "Node",
+    "declaration": true,
+    "forceConsistentCasingInFileNames": true,
+    "composite": true,
+    "target": "ES6",
     "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "resolveJsonModule": true,
-    "sourceMap": true,
-    "baseUrl": "./",
-    "types": ["vite/client", "@intlify/vite-plugin-vue-i18n/client"],
-    "paths": {
-      "@/*": ["src/*"]
-    },
-    "lib": ["esnext", "dom", "dom.iterable", "scripthost"]
-  },
-  "include": ["vite.config.*", "src/**/*", "src/**/*.vue"],
-  "exclude": ["node_modules", "**/*.stories.ts"]
+    "lib": ["ESNext", "DOM"]
+  }
 }
