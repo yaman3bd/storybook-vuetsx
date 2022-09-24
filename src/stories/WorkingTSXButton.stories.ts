@@ -1,10 +1,10 @@
 import { Story } from "@storybook/vue3";
-import TSXButton from "./TSXButton";
+import WorkingTSXButton from "./WorkingTSXButton";
 
 // More on default export: https://storybook.js.org/docs/vue/writing-stories/introduction#default-export
 export default {
-  title: "Example/TSX Button",
-  component: TSXButton,
+  title: "Example/Working TSX Button",
+  component: WorkingTSXButton,
   // More on argTypes: https://storybook.js.org/docs/vue/api/argtypes
   argTypes: {
     type: {
@@ -31,13 +31,14 @@ export default {
 // More on component templates: https://storybook.js.org/docs/vue/writing-stories/introduction#using-args
 const Template: Story = (args) => ({
   // Components used in your story `template` are defined in the `components` object
-  components: { TSXButton },
+  components: { WorkingTSXButton },
   // The story's `args` need to be mapped into the template through the `setup()` method
   setup() {
     return { args };
   },
   // And then the `args` are bound to your component with `v-bind="args"`
-  template: '<TSXButton v-bind="args" >TSXButton example</TSXButton>',
+  template:
+    '<WorkingTSXButton v-bind="args" >TSXButton example</WorkingTSXButton>',
 });
 
 export const Primary = Template.bind({});
